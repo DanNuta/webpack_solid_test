@@ -26,14 +26,3 @@ test("test a muck function", () => {
 
   expect(fn()).toBe("string");
 });
-
-test("mock axios", async () => {
-  let functionSpy: jest.SpyInstance;
-  functionSpy = jest.spyOn<>(axios, "get").mockReturnValueOnce({
-    data: {
-      id: 1,
-    },
-  });
-
-  const response = await 
-});
