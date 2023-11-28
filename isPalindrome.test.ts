@@ -12,3 +12,9 @@ test("check if the object are the same", () => {
   const obj = { name: "Dan" };
   expect(checkIfObjectIsTheSame(obj)).toEqual(obj);
 });
+
+describe("testing something else", () => {
+  test("test example", () => {
+    expect(true).toBe(true);
+  });
+});
