@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "target": "esnext",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "jsx": "preserve",
-    "jsxImportSource": "solid-js"
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
+    "jsxImportSource": "solid-js",
+    "module": "CommonJS"
   }
 }

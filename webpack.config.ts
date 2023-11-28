@@ -1,5 +1,5 @@
 const path = require("path");
-import HtmlWebpackPlugin from "html-webpack-plugin";
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
   mode: "development",
@@ -17,6 +17,14 @@ const config = {
 
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+        options: {
+          presets: ["solid"],
+        },
+      },
       {
         test: /\.(js|jsx)$/,
         loader: "babel-loader",
